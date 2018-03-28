@@ -1,51 +1,49 @@
-.spectrum {
-  background: linear-gradient(to right, #f3fbf7, #549B7A);
+.spectrum{
+  background: linear-gradient(to right, $ltgreen, $mdgreen);
 }
 
-input[type=range] {
+input[type=range]{
   -webkit-appearance: none;
-  border: 1px solid #549B7A;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+  border: 1px solid $mdgreen;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
   height: 30px;
   width: 80%;
+  &:focus{
+    outline: transparent;
+  }
 }
-input[type=range]:focus {
-  outline: transparent;
-}
-
 /* Special styling for WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: #549B7A;
-  border-radius: 3px;
-  border: 1px solid #549B7A;
+  background: $mdgreen;
+  border-radius: $border-radius;
+  border: 1px solid $mdgreen;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   height: 34px;
   width: 10px;
   cursor: pointer;
-  margin-top: 0px;
-  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 }
 
 /* All the same stuff for Firefox */
 input[type=range]::-moz-range-thumb {
-  border: 1px solid #549B7A;
+  border: 1px solid $mdgreen;
   height: 34px;
   width: 10px;
-  background: #549B7A;
-  border-radius: 3px;
+  background: $mdgreen;
+  border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
 }
 
 /* All the same stuff for IE */
 input[type=range]::-ms-thumb {
-  border: 1px solid #549B7A;
+  border: 1px solid $mdgreen;
   height: 34px;
   width: 10px;
-  background: #549B7A;
-  border-radius: 3px;
+  background: $mdgreen;
+  border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
 }
