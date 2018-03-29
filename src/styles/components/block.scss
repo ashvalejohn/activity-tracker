@@ -8,4 +8,15 @@
   &--bad{
     background-color: $ltgreen;
   }
+  &:hover .block__activity{
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.block__activity{
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 200px;
 }

@@ -9,6 +9,17 @@
 .block--bad {
   background-color: #f3fbf7;
 }
+.block:hover .block__activity {
+  cursor: pointer;
+  display: block;
+}
+
+.block__activity {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 200px;
+}
 
 .check-in__submit {
   background-color: #549B7A;
