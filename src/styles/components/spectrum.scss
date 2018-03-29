@@ -1,5 +1,6 @@
 .spectrum{
   background: linear-gradient(to right, $ltgreen, $mdgreen);
+  margin-top: 10px;
 }
 
 input[type=range]{
@@ -24,6 +25,11 @@ input[type=range]::-webkit-slider-thumb {
   width: 10px;
   cursor: pointer;
   margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  transition-duration: .25s;
+  &:hover{
+    box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
+    transition-duration: .25s;
+  }
 }
 
 /* All the same stuff for Firefox */
@@ -35,6 +41,11 @@ input[type=range]::-moz-range-thumb {
   border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
+  transition-duration: .25s;
+  &:hover{
+    box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
+    transition-duration: .25s;
+  }
 }
 
 /* All the same stuff for IE */
@@ -46,4 +57,9 @@ input[type=range]::-ms-thumb {
   border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
+  transition-duration: .25s;
+  &:hover{
+    box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
+    transition-duration: .25s;
+  }
 }

@@ -29,15 +29,16 @@ class CheckIn extends Component {
   }
 
   render() {
-    console.log(this.state);
-    return <div>
+    return <div className="check-in">
         <form>
-          <label>
-            What’d you do for the last 30 minutes?
-            <textarea onChange={e => {this.recordActivity(e)}} placeholder="Paired socks, wrote thank you cards, flossed teeth." />
+          <label className="check-in__label">
+            What did you do for the last 30 minutes?
+            <textarea className='check-in__activity' onChange={e => {
+                this.recordActivity(e);
+              }} placeholder="Paired socks, wrote thank you cards, flossed teeth." />
           </label>
-          <label>
-            How’d you feel about it?
+          <label className="check-in__label">
+            How do you feel about it?
             <Spectrum moveSlider={this.moveSlider} />
           </label>
           <input className="check-in__submit" type="submit" value="Save" />

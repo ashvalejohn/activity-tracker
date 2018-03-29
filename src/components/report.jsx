@@ -5,7 +5,7 @@ import { reports } from '../reports.js';
 const Report = () => {
   console.log(reports);
   return (
-    <div>
+    <div className='report'>
       <h2>Here’s how you felt about your day:</h2>
       <div>
         {
