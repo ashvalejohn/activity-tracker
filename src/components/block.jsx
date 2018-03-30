@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Block = (props) => {
-  return (
-    <div className={`block block--${props.feeling > 50 ? 'good' : 'bad'}`}>
-      <p className='block__activity'>{props.activity}</p>
-    </div>
-  );
+  return <div 
+    onMouseEnter={() => {props.displayActivity(props.activity);}} 
+    onMouseLeave={() => {props.displayActivity(null);}}
+    className={`block__gradient block__gradient--${props.feeling > 50 ? "good" : "bad"}`} />;
 }
 
 export default Block;
