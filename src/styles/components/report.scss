@@ -1,0 +1,15 @@
+.report{
+  @include modal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.report__title{
+  margin: 50px 0 40px 0 ;
+}
+
+.report__blocks{
+  width: 80%;
+}

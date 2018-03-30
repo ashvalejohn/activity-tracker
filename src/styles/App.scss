@@ -9,10 +9,17 @@
 // }
 
 @import './helpers/_variables';
+@import './helpers/_mixins';
 @import './components/block';
 @import './components/check-in';
+@import './components/report';
 @import './components/spectrum';
 
 body{
   background-color: $ltgreen;
+}
+
+h1, h2, h3{
+  font-size: inherit;
+  font-weight: normal;
 }

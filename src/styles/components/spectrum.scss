@@ -25,10 +25,10 @@ input[type=range]::-webkit-slider-thumb {
   width: 10px;
   cursor: pointer;
   margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  transition-duration: .25s;
+  transition-duration: $transition_duration;
   &:hover{
     box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
-    transition-duration: .25s;
+    transition-duration: $transition_duration;
   }
 }
 
@@ -41,10 +41,10 @@ input[type=range]::-moz-range-thumb {
   border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
-  transition-duration: .25s;
+  transition-duration: $transition_duration;
   &:hover{
     box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
-    transition-duration: .25s;
+    transition-duration: $transition_duration;
   }
 }
 
@@ -57,9 +57,9 @@ input[type=range]::-ms-thumb {
   border-radius: $border-radius;
   box-shadow: 0px 1px 1px #fff, 0px 0px 1px #fff;
   cursor: pointer;
-  transition-duration: .25s;
+  transition-duration: $transition_duration;
   &:hover{
     box-shadow: 0px 1px 3px #fff, 0px 0px 3px #fff;
-    transition-duration: .25s;
+    transition-duration: $transition_duration;
   }
 }

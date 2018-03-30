@@ -1,13 +1,5 @@
 .check-in{
-  background-color: #fff;
-  border-radius: $border-radius;
-  border: 1px solid $dkgreen;
-  box-shadow: $box-shadow;
-  color: $mdgreen;
-  font-family: courier;
-  height: 500px;
-  width: 600px;
-  margin: 0 auto;
+  @include modal;
   form {
     display: flex;
     flex-direction: column;
@@ -38,7 +30,7 @@
     outline: transparent;
     &::placeholder{
       color: white;
-      transition-duration: .25s;
+      transition-duration: $transition-duration;
     }
   }
 }
@@ -49,12 +41,14 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   color: $ltgreen;
-  padding: 15px 30px;
+  font-size: 1.1rem;
+  height: 50px;
+  width: 100px;
   text-transform: uppercase;
   opacity: .9;
   &:hover{
     cursor: pointer;
     opacity: 1;
-    transition-duration: .25s;
+    transition-duration: $transition-duration;
   }
 }

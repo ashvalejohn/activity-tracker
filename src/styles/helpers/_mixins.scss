@@ -1,0 +1,13 @@
+@mixin modal{
+  background-color: #fff;
+  border-radius: $border-radius;
+  border: 1px solid $dkgreen;
+  box-shadow: $box-shadow;
+  color: $mdgreen;
+  font-family: courier;
+  height: 400px;
+  width: 500px;
+  max-height: 90vh;
+  max-width: 80vw;
+  margin: 0 auto;
+}
