@@ -27,7 +27,7 @@ class Report extends Component{
           {
             reports.map((report, index) => {
               return (
-                <Block feeling={report.feeling} key={index} activity={report.activity} displayActivity={this.displayActivity} />
+                <Block feeling={report.feeling} key={index} activity={report.activity} time={report.time} displayActivity={this.displayActivity} />
               )
             })
           }

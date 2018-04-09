@@ -1,8 +1,3 @@
-.block{
-  display: inline-block;
-
-}
-
 .block__gradient{
   display: inline-block;
   width: 55px;
@@ -16,14 +11,9 @@
   &:hover{
     cursor: pointer;
   }
-  &:hover + .block__activity{
-    cursor: default;
-    opacity: 1;
-  }
 }
 
 .block__activity{
-  opacity: 1;
   position: absolute;
   border-radius: $border-radius;
   background-color: rgba(255, 255, 255, 0.9);
@@ -32,7 +22,6 @@
   height: 60px;
   top: 160px;
   border: 1px solid $dkgreen;
-  transition-duration: $transition-duration;
 
   color: $dkgreen;
   text-align: center;
