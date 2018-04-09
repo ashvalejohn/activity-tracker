@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Nav from './components/nav';
 import CheckIn from './components/check-in';
 import Report from './components/report';
 
 class App extends Component {
+  state = {
+    response: ""
+  };
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
+  }
+
+  callApi = async () => {
+    const response = await fetch("/api/reports");
+    const body = await response.json();
+
+    if (response.status !== 200) throw Error(body.message);
+
+    return body;
+  };
+
   render() {
     return (
-      <Router className="App">
-        <div>
-          <Route path='/' component={Nav} />
-          <Route path='/report' component={Report} />
-          <Route default path='/check-in' component={CheckIn} />
-        </div>
-      </Router>
+      <div className="App">
+        <header className="App-header">
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">{this.state.response}</p>
+      </div>
     );
   }
 }
