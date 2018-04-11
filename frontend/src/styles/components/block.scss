@@ -2,11 +2,15 @@
   display: inline-block;
   width: 55px;
   height: 150px;
-  &--good{
+  margin: 0 1px;
+  &--1, &--2, &--3{
+    background-color: $ltgreen;
+  }
+  &--4, &--5, &--6{
     background-color: $mdgreen;
   }
-  &--bad{
-    background-color: $ltgreen;
+  &--7, &--8, &--9{
+    background-color: $dkgreen;
   }
   &:hover{
     cursor: pointer;
