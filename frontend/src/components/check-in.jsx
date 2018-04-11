@@ -30,10 +30,10 @@ class CheckIn extends Component {
 
   render() {
     return <div className="check-in">
-        <form>
+        <form action="/api/reports" method="POST">
           <label className="check-in__label">
             What did you do for the last 30 minutes?
-            <textarea className='check-in__activity' onChange={e => {
+            <textarea name="activity" className='check-in__activity' onChange={e => {
                 this.recordActivity(e);
               }} placeholder="Paired socks, wrote thank you cards, flossed teeth." />
           </label>
