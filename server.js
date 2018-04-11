@@ -15,14 +15,21 @@ const reportSchema = new mongoose.Schema({
 const Report = mongoose.model("Report", reportSchema);
 
 Report.create({
-  activity: "Learning Mongoose",
-  feeling: "80",
+  activity: "🍄",
+  feeling: "45",
 });
 
 app.set("view engine", "ejs");
 
 app.get("/api/reports", (req, res) => {
-  res.send({express: "hello"});
+  Report.find({}, (err, reports) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("⚡️⚡️⚡️");
+      res.send({reports: reports});
+    }
+  });
 });
 
 app.listen(port, () => {
