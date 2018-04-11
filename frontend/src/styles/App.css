@@ -1,33 +1,32 @@
-.block {
+.block__gradient {
   display: inline-block;
   width: 55px;
   height: 150px;
 }
-.block--good {
+.block__gradient--good {
   background-color: #549B7A;
 }
-.block--bad {
+.block__gradient--bad {
   background-color: #f3fbf7;
 }
-.block:hover {
+.block__gradient:hover {
   cursor: pointer;
-}
-.block:hover .block__activity {
-  cursor: default;
-  opacity: 1;
 }
 
 .block__activity {
-  opacity: 0;
   position: absolute;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 440px;
-  height: 100px;
+  width: 450px;
+  max-width: 75vw;
+  height: 60px;
+  top: 160px;
   border: 1px solid #254536;
-  top: 150px;
-  left: 300px;
-  transition-duration: 0.25s;
+  color: #254536;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 .check-in {

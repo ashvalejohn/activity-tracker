@@ -1,17 +1,31 @@
 {
-  "name": "activity-trackr",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+  "name": "activity-tracker",
+  "version": "1.0.0",
+  "description": "A simple activity tracker to log what you did and how you felt about it.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "client": "cd frontend && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashvalejohn/activity-tracker.git"
+  },
+  "author": "ashvalejohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashvalejohn/activity-tracker/issues"
+  },
+  "homepage": "https://github.com/ashvalejohn/activity-tracker#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "yarn": "^1.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }
