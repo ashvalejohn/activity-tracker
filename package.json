@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ashvalejohn/activity-tracker#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongoose": "^5.0.14",
     "yarn": "^1.5.1"
