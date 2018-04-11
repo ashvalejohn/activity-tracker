@@ -1,4 +1,4 @@
-# Activity Tracker
+# Activity Tracker (In Progress)
 A simple activity tracker to log what you did and how you felt about it.
 
 ---
