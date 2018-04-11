@@ -2,12 +2,16 @@
   display: inline-block;
   width: 55px;
   height: 150px;
+  margin: 0 1px;
 }
-.block__gradient--good {
+.block__gradient--1, .block__gradient--2, .block__gradient--3 {
+  background-color: #f3fbf7;
+}
+.block__gradient--4, .block__gradient--5, .block__gradient--6 {
   background-color: #549B7A;
 }
-.block__gradient--bad {
-  background-color: #f3fbf7;
+.block__gradient--7, .block__gradient--8, .block__gradient--9 {
+  background-color: #254536;
 }
 .block__gradient:hover {
   cursor: pointer;
