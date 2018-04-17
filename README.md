@@ -2,7 +2,6 @@
 A simple activity tracker to log what you did and how you felt about it.
 
 ---
-
 ## Stack
 This project is built using:
 - Node.js
@@ -11,7 +10,6 @@ This project is built using:
 - Mongoose
 - React.js
 - SCSS
-
 
 ---
 ## UI Wireframes | Created using Adobe Xd
